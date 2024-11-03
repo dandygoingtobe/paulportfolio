@@ -1,11 +1,9 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
   font-family: 'Arial', sans-serif;
   color: #333;
@@ -16,7 +14,6 @@ body {
   justify-content: center;
 }
 
-/* Header */
 .header {
   height: 80px;
   width: 100%;
@@ -50,7 +47,6 @@ body {
   font-size: 18px;
 }
 
-/* Main Image Section */
 .model-container {
   max-width: 1200px;
   padding: 20px;
@@ -69,7 +65,6 @@ body {
   color: #555;
 }
 
-/* Image styling */
 .image-container {
   position: relative;
   margin-bottom: 50px;
@@ -88,7 +83,6 @@ body {
   transform: scale(1.05);
 }
 
-/* Left-aligned image description */
 .left-aligned-description {
   text-align: left;
   margin-left: 20px; 
@@ -122,7 +116,6 @@ body {
   line-height: 1.6;
 }
 
-/* Form Section */
 .form-container {
   width: 100%;
   max-width: 600px;
