@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Maintenance Cost Estimator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+<body>
+    <img src="{{ url_for('static', filename='MCON Logo.png') }}" alt="Company Logo" class="logo">
+
+    <div class="container">
+        <h1>Car Maintenance Cost Estimator</h1>
+        <form method="POST" action="/">
+            <label for="mileage">Current Mileage:</label>
+            <input type="number" id="mileage" name="mileage" required>
+            
+            <label for="maintenance_type">Maintenance Type:</label>
+            <select id="maintenance_type" name="maintenance_type" required>
+                <option value="oil_change">Oil Change</option>
+                <option value="tire_rotation">Tire Rotation</option>
+                <option value="brake_inspection">Brake Inspection</option>
+                <option value="transmission_service">Transmission Service</option>
+            </select>
+
+            <button type="submit">Calculate Cost</button>
+        </form>
+
+        {% if cost_info %}
+            <h2>Estimated Cost: ${{ cost_info }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>

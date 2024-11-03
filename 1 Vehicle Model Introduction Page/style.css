@@ -1,0 +1,181 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header */
+.header {
+  height: 80px;
+  width: 100%;
+  background-color: #000;
+  color: #777;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px 50px;
+  position: relative;
+}
+
+.header-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-logo img {
+  height: auto;
+  max-width: 100px;
+  width: auto;
+  filter: grayscale(100%);
+  opacity: 0.6;
+}
+
+.header-nav a {
+  margin-left: 20px;
+  color: #777;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Main Image Section */
+.model-container {
+  max-width: 1200px;
+  padding: 20px;
+  text-align: center;
+}
+
+.car-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.car-description {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Image styling */
+.image-container {
+  position: relative;
+  margin-bottom: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.05);
+}
+
+/* Left-aligned image description */
+.left-aligned-description {
+  text-align: left;
+  margin-left: 20px; 
+  max-width: 300px; 
+}
+
+.image-fade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(transparent, rgba(255, 255, 255, 0.3)); 
+}
+
+.image-description {
+  font-size: 35px; 
+  text-align: left; 
+  font-weight: bold;
+  color: #222; 
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.image-description + .sub-description {
+  font-size: 16px; 
+  text-align: left; 
+  color: #555; 
+  width: 80%;
+  max-width: 70%;
+  line-height: 1.6;
+}
+
+/* Form Section */
+.form-container {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 40px;
+  padding: 40px;
+  background: linear-gradient(to bottom right, #f3f4f6, #e0e5ec);
+  background-color: #f9fafc; 
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.form-container h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-field label {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.form-field input,
+.form-field select {
+  background-color: #e6e9ee; 
+  color: #333; 
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  text-align: left; 
+  border: 1px solid #888;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.submit-button {
+  background-color: #004080;
+  color: white;
+  padding: 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background: #002750;
+  transform: scale(1.02);
+}
